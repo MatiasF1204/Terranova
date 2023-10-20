@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terranova</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Vinculacion con Font Awesome -->
+    <script src="https://kit.fontawesome.com/2f3d90d1df.js" crossorigin="anonymous"></script>
+
+    <!-- Vinculacion bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo" href="index1.html">TERRANOVA</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="index1.html" class="menu__link">Home</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Productos <img src="assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado masculino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado femenino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Niños</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="Contactanos/contactenos.html" class="menu__link">Contáctanos</a>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="Quienes Somos/QuienesSomos.html" class="menu__link">Quiénes Somos</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="assets/menu.svg" class="menu__img">
+            </div>
+        </section>
+
+        <div class="content">
+            <h1>EXPLORA LO DESCONOCIDO</h1>
+            <p>Terranova, empresa nacional dedicada a la venta de borcegos de alta calidad, con sedes en toda la Argentina desde 1980</p>
+            <!-- <div>
+                <button class="signup-btn" type="button"><span class="cover"></span>SIGN UP</button>
+                <button class="login-btn" type="button"><span class="cover"></span>LOG IN</button>
+            </div> -->
+        </div>
+    </nav>
+
+    <section class="faq" id="inicio">
+        <div class="questions-container">
+            <div class="question">
+                <button>
+                    <span>Medios de Pago</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <p>Aceptamos transferencia, efectivo, débito y crédito con tarjeta bancarizada VISA, Mastercard,
+                    American Express y Naranja. Hasta 3 cuotas sin interés.</p>
+            </div>
+            <div class="question">
+                <button>
+                    <span>Horario de Atención</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <p>Atendemos de lunes a sábados, en los horarios de 10:00 de la mañana hasta las 21:00 de la noche.</p>
+            </div>
+            <div class="question">
+                <button>
+                    <span>¿Hacemos envíos?</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <p>Realizamos envíos a Tolhuin y a Ushuaia por medio de correo argentino o transporte Vesprini y Cruz
+                    del Sur.</p>
+            </div>
+            <div class="question">
+                <button>
+                    <span>¿Dónde atendemos?</span>
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <p>Atendemos por particular en nuestro domicilio en calle San Martin 1233, entre Colón y Avenida
+                    Avellaneda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product"> 
+        <h2 class="product-category">PRODUCTOS CON DESCUENTO</h2>
+        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="img/card1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego mujer</h2>
+                    <p class="product-short-description">Talle 36 al 41</p>
+                    <span class="price">$39.000</span><span class="actual-price">$43.000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="img/card2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego unisex</h2>
+                    <p class="product-short-description">Talle 36, 38, 40, 42, 43</p>
+                    <span class="price">$38.200</span><span class="actual-price">$42.999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="img/card3.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego unisex</h2>
+                    <p class="product-short-description">Talle 36 al 45</p>
+                    <span class="price">$38.200</span><span class="actual-price">$42.999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="img/card4.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego mujer</h2>
+                    <p class="product-short-description">Talle 40 al 46</p>
+                    <span class="price">$40.000</span><span class="actual-price">$47.000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="img/card5.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego unisex</h2>
+                    <p class="product-short-description">Talle 36 al 45</p>
+                    <span class="price">$38.200</span><span class="actual-price">$42.999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="img/card6.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Borcego Montagne</h2>
+                    <p class="product-short-description">Talles </p>
+                    <span class="price">$38.200</span><span class="actual-price">$42.999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="img/card7.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">BORCEGO ORMA MUJER</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$38.200</span><span class="actual-price">$42.999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="img/card8.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">BORCEGO SALOMÓN</h2>
+                    <p class="product-short-description">Disponible talles 36 al 44</p>
+                    <span class="price">$42.000</span><span class="actual-price">$45.000</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="img/card9.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="img/card10.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">TERRANOVA</h3>
+                <span class="footer-info">239 131 487</span>
+                <span class="footer-info">terranova@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="" class="menu-item-footer">Home</a>
+                    <a href="" class="menu-item-footer">Reazlizar reclamo</a>
+                    <a href="" class="menu-item-footer">Realizar consulta</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Políticas de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                    <a href="" class="menu-item-footer">Avisos legales</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">REDES SOCIALES</span>
+                <div class="social-container">
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2023. Todos los derechos de autor reservados.</span>
+        </div>
+
+        <a href="#inicio">IR A INICIO</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!-- Vinculacion script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

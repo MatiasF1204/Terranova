@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    /* Para que los elementos no se salgan de su contenedor */
+    box-sizing: border-box;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+
+/* --------------------------ESTILOS DEL NADVAR RESPONSIVE------------------------------------*/
+nav {
+    background-color: #2b2929;
+    height: 120px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0.5px 1px 5px;
+    /* box-shadow: 1px 1px 5px; */
+
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #ffffff;
+        font-family: "Mulish", sans-serif;
+
+    }
+
+    .content h1 {
+        font-weight: 1000;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 770px) {
+        .content h1 {
+            padding: 10px;
+            font-weight: 900;
+            font-size: 45px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .enlace {
+        text-decoration: none;
+        position: absolute;
+        padding: 20px 50px;
+    }
+
+    .logo {
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+    }
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    /* Se los usa para ponerlos el horizontal */
+    display: inline-block;
+    /* Para centrarlos en un horizontal de 80px */
+    line-height: 125px;
+    /* Espacio entre elementos */
+    margin: 0 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+
+li a.active,
+li a:hover {
+    text-decoration: underline;
+    /* background-color: white; */
+    transition: 0.5s;
+}
+
+/* Configuraciones para el boton de 3 líneas responsive */
+.checkbtn {
+    margin-top: 20px;
+    font-size: 35px;
+    /* Se lo manda a la derecha */
+    float: right;
+    /* Centrarlo */
+    line-height: 80px;
+    margin-right: 40px;
+
+    /* Para que al pasar el mouse aparezca una manito */
+    cursor: pointer;
+
+    /* Para ocultarlo, ya que se tiene que ver solo en dispositivos pequeños */
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* RESPONSIVE PARTE TABLETA */
+
+@media (max-width: 952px) {
+    .logo {
+        margin-left: -20px;
+    }
+
+    .secciones {
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+/* RESPONSIVE PARTE CELULAR */
+
+@media (max-width: 770px) {
+    .checkbtn {
+        top: 15px;
+        /* Al achicarse a 858px y menos aparece de nuevo el botón de las 3 rayitas */
+        display: block;
+        color: rgb(255, 255, 255);
+    }
+
+    nav .logo {
+        margin-top: 20px;
+    }
+
+    .secciones {
+
+        .active {
+            margin-top: 30px;
+        }
+    }
+
+    ul {
+        z-index: 1;
+        position: fixed;
+        width: 45%;
+        height: 100%;
+        background-color: #121212;
+        /* background-color: rgb(221, 221, 221); */
+        /* top: 80px; */
+        left: -100%;
+        text-align: left;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        /* margin: 0px 0px 0px 0px; */
+        line-height: 60px;
+    }
+
+    nav ul li a {
+        margin-left: 0px;
+        color: white;
+        font-size: 15px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        text-decoration: underline;
+        color: rgb(246, 246, 246);
+    }
+
+    /* Cuando el boton check aparezca en pantalla la ventana con el menu hamburguesa también aparece */
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* ------------------------------ FIN DE ESTILOS DEL NADVAR RESPONSIVE------------------------------------*/

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctenos</title>
+
+    <!-- Vinculacion con css -->
+    <link rel="stylesheet" href="contactenos.css" />
+
+    <!-- Cdn Font Awesome   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Vinculacion con Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/2f3d90d1df.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo" href="index1.html">TERRANOVA</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="/index1.html" class="menu__link">Home</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Productos <img src="/assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado masculino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado femenino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Niños</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="/Contactanos/contactenos.html" class="menu__link">Contáctanos</a>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="/Quienes Somos/QuienesSomos.html" class="menu__link">Quiénes Somos</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="/assets/menu.svg" class="menu__img">
+            </div>
+        </section>
+
+    
+    </nav>
+
+    <section class="contacto" id="contacto">
+        <form id="form-contacto" action="https://formspree.io/f/xvojoqgw" method="post">
+            <h2>FORMULARIO DE CONTACTO</h2>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <label>Nombre y apellido:</label>
+                    <input type="text" name="name" class="box" required placeholder="Ingresá tu nombre" maxlength="20"
+                        id="nombre-contacto" onkeyup="validarNombre()" />
+                    <span id="error-nombre"></span>
+                </div>
+                <div class="inputBox">
+                    <label>Teléfono:</label>
+                    <input type="number" name="number" class="box" required placeholder="Ingresá tu teléfono" min="0"
+                        id="telefono-contacto" onkeyup="validarTelefono()" />
+                    <span id="error-tel"></span>
+                </div>
+                <div class="inputBox">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" class="box" required placeholder="Ingresá tu correo electrónico"
+                        min="0" id="email-contacto" onkeyup="validarEmail()" />
+                    <span id="error-email"></span>
+                </div>
+                <div class="inputBox">
+                    <label>Asunto:</label>
+                    <input type="text" name="asunto" class="box" required placeholder="Ingresá el asunto" maxlength="20"
+                        id="asunto-contacto" onkeyup="validarAsunto()" />
+                    <span id="error-asunto"></span>
+                </div>
+                <div class="inputText">
+                    <label>Mensaje:</label>
+                    <textarea type="text" name="text" cols="100" rows="10" class="box" required
+                        placeholder="Escriba aquí su mensaje..." id="mensaje-contacto"
+                        onkeyup="validarMensaje()"></textarea>
+                    <span id="error-mensaje"></span>
+                </div>
+            </div>
+            <div id="enviar">
+                <input type="submit" value="Enviar" class="btn" name="enviar" />
+                <span id="error-envio"></span>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">TERRANOVA</h3>
+                <span class="footer-info">239 131 487</span>
+                <span class="footer-info">terranova@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="" class="menu-item-footer">Home</a>
+                    <a href="" class="menu-item-footer">Reazlizar reclamo</a>
+                    <a href="" class="menu-item-footer">Realizar consulta</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Políticas de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                    <a href="" class="menu-item-footer">Avisos legales</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">REDES SOCIALES</span>
+                <div class="social-container">
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2023. Todos los derechos de autor reservados.</span>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    
+    <!-- Vinculacion script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
