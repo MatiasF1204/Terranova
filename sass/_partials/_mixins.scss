@@ -1,0 +1,20 @@
+@mixin hover-color{
+    color: $primary-color;
+    transition: color 0.3s ease;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition($property, $time: $transition-time) {
+    transition: $property $time;
+}
+
+@mixin font($family, $weight: normal, $size: 16px) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+}

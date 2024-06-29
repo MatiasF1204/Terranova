@@ -1,0 +1,74 @@
+@import './_partials/mixins';
+@import './_partials/functions';
+@import './_partials/variables';
+
+body{
+    background-image: url(../img/back2.jpg);
+    background-position: center;
+}
+
+.formulario{
+    padding: 25px 0px;
+
+    .formulario__submit--exito{
+        font-weight: bold;
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+
+
+    > .row {
+        background-color: whitesmoke;
+        padding: 15px;
+    }
+
+    .field--contact{
+        padding-bottom: 23px;
+    }
+
+    .field--last{
+        margin-bottom: 40px;
+    }
+
+    .input-field{
+
+        > label {
+            color: black;
+            font-size: 1.4em;
+        }
+
+        > input {
+            margin-top: 10px;
+        }
+
+        .formulario__input-error {
+            display: none; //oculta el mensaje de error
+        }
+
+        .formulario__input-error.active {
+            display: block; // Mostrar cuando hay un error
+        }
+    }
+}
+
+.cartas .col .card {
+    position: relative;
+    
+    .card-image > i {
+        margin-top: 12px;
+        font-size: 45px;
+        color: teal;
+    }
+
+    .card-content{
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .formulario {
+        .field--contact{
+            padding-bottom: 0;
+        }
+    }
+}

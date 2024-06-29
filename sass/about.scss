@@ -1,0 +1,23 @@
+@import './_partials/mixins';
+@import './_partials/functions';
+@import './_partials/variables';
+
+.parallax-principal {
+    .container {
+        h1 {
+            font-weight: bold;
+            color: whitesmoke;
+            > span {
+                color: rgb(73, 215, 201);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .parallax-principal {
+        .container>h1 {
+            font-size: 50px;
+        }
+    }
+}

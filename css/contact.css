@@ -1,0 +1,56 @@
+body {
+  background-image: url(../img/back2.jpg);
+  background-position: center;
+}
+
+.formulario {
+  padding: 25px 0px;
+}
+.formulario .formulario__submit--exito {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+.formulario > .row {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+.formulario .field--contact {
+  padding-bottom: 23px;
+}
+.formulario .field--last {
+  margin-bottom: 40px;
+}
+.formulario .input-field > label {
+  color: black;
+  font-size: 1.4em;
+}
+.formulario .input-field > input {
+  margin-top: 10px;
+}
+.formulario .input-field .formulario__input-error {
+  display: none;
+}
+.formulario .input-field .formulario__input-error.active {
+  display: block;
+}
+
+.cartas .col .card {
+  position: relative;
+}
+.cartas .col .card .card-image > i {
+  margin-top: 12px;
+  font-size: 45px;
+  color: teal;
+}
+.cartas .col .card .card-content {
+  padding: 10px 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario .field--contact {
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

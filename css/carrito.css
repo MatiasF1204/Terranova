@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+.shopping-cart {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: -110%;
+  width: 45vw;
+  z-index: 1100;
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow-y: scroll;
+  border: black 1px solid;
+  transition: right 0.4s ease;
+}
+.shopping-cart h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.shopping-cart .cerrar-carrito {
+  margin-top: 15px;
+  text-align: right;
+  margin-bottom: 2.7rem;
+}
+.shopping-cart .cerrar-carrito > i {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin: 0px 15px;
+  font-weight: bold;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+.shopping-cart .cerrar-carrito > i:hover {
+  color: red;
+}
+.shopping-cart #lista-carrito {
+  width: 100%;
+  margin-top: -40px;
+}
+.shopping-cart #lista-carrito thead tr th {
+  font-size: 1.2em;
+  text-align: center;
+}
+.shopping-cart #lista-carrito tbody td {
+  font-size: 1.2em;
+  text-align: center;
+}
+.shopping-cart .borrar-producto {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, color 0.3s ease;
+  color: black;
+}
+.shopping-cart .borrar-producto:hover {
+  color: red;
+}
+.shopping-cart .principal {
+  padding: 0px 20px;
+}
+.shopping-cart .principal .carrito-total {
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.shopping-cart .principal .botones {
+  margin-top: 10px;
+}
+.shopping-cart .principal .botones #vaciar-carrito {
+  margin-bottom: 10px;
+}
+
+.shopping-cart.active {
+  right: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .shopping-cart {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 680px) {
+  .shopping-cart {
+    width: 60vw;
+  }
+  .shopping-cart #lista-carrito {
+    width: 100%;
+  }
+  .shopping-cart #lista-carrito thead tr th {
+    font-size: 1em;
+  }
+  .shopping-cart #lista-carrito tbody td {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 680px) {
+  .shopping-cart {
+    width: 60vw;
+  }
+}
+@media (max-width: 550px) {
+  .shopping-cart {
+    width: 100%;
+    border-left: 0;
+  }
+  .about .box-container {
+    grid-template-columns: 1fr;
+  }
+  .menu .box-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=carrito.css.map */

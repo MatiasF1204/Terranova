@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <!-- Vinculacion con Font Awesome -->
+    <script src="https://kit.fontawesome.com/2f3d90d1df.js" crossorigin="anonymous"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!-- Hojas de estilo personalizadas -->
+    <link rel="stylesheet" href="../css/navFooter.css">
+    <link rel="stylesheet" href="../css/calzadoM.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+
+<body>
+
+    <main class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">TERRANOVA</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">Home</a>
+                </li>
+
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link menu__link--color">Productos <img src="../assets/arrow.svg"
+                            class="menu__arrow"></a>
+
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado masculino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Calzado femenino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Unisex</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Niños</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./contact.html" class="menu__link">Contacto</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./about.html" class="menu__link">Nosotros</a>
+                </li>
+
+            </ul>
+
+            <div class="icons">
+
+                <button class="user-icon"><i class="fa-solid fa-user"></i></button>
+                <button id="cart-btn" class="carrito-icon"><i class="fa-solid fa-cart-shopping"></i> <span
+                        class="white-text" id="cart-count">(0)</span></button>
+
+                <div class="menu__hamburguer">
+                    <img src="../assets/menu.svg" class="menu__img">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="modalBox active">
+            <div class="modalBox__container">
+                <form action="" class="formu">
+                    <a href="" class="formu__close">X</a>
+                    <h3 class="formu__title">Iniciar Sesión</h3>
+                    <p class="formu__registrate">¿Es tu primera vez? <a href="">Regístrate</a></p>
+
+                    <label class="formu__label" for="email">Email</label>
+                    <input class="formu__input" type="email" name="email" id="email" placeholder="Ingrese su correo..."
+                        required>
+
+                    <label class="formu__label" for="password">Contraseña</label>
+                    <input class="formu__input" type="password" name="password" id="password"
+                        placeholder="Ingrese su contraseña..." required>
+                    <p class="form__recover">¿Olvidaste la contraseña?</p>
+
+                    <div class="buttons">
+                        <button type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- CARRITO -->
+    <div class="shopping-cart" id="carrito">
+
+        <section>
+
+            <div class="cerrar-carrito">
+                <i class="material-icons">close</i>
+            </div>
+
+            <h3 id="carrito-vacio">¡El carrito está vacío!</h3>
+
+            <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th>Imágen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="principal">
+                <p class="carrito-total">Total: $ <span id="total-pagar"></span> </p>
+                <div class="botones">
+                    <a id="vaciar-carrito" class="button btn">Vaciar carrito</a>
+                    <a href="" id="pedir-whatsapp" class="btn ">Pedir por Whatsapp</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="products">
+        <h2 class="products__title center">Calzado Masculino</h2>
+        <hr>
+
+        <div class="row" id="lista-productos">
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas1.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">WILDO</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$98920</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="agregar-carrito teal-text" data-id="1">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas2.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">CLOUDFIELD</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 40 al 46
+                        </p>
+                        <p class="precio producto-precio">$108555</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="2">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas3.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">LEKNESS</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 40 al 46
+                        </p>
+                        <p class="precio producto-precio">$102500</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="3">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas4.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">BLUE VENTO</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$102500</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="4">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas5.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">RAIL</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$99875</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="5">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas6.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">WEIGHTLESS</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$123683</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="6">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas7.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">TAURUS</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$106763</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="7">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l3 box">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/calzadoMasc/zapas8.jpg" class="producto-imagen">
+                        <span class="card-title black-text producto-nombre">EXPLORER</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="talle">
+                            Disponible: Talle 39 al 46
+                        </p>
+                        <p class="precio producto-precio">$112388</p>
+                        <p class="cuotas red-text">
+                            ¡6 cuotas sin interés!
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a class="teal-text agregar-carrito" data-id="8">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">TERRANOVA</h3>
+                <span class="footer-info">239 131 487</span>
+                <span class="footer-info">terranova@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="../index.html" class="menu-item-footer">Home</a>
+                    <a href="" class="menu-item-footer">Productos</a>
+                    <a href="./about.html" class="menu-item-footer">Nosotros</a>
+                    <a href="./contact.html" class="menu-item-footer">Contacto</a>
+
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Políticas de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                    <a href="" class="menu-item-footer">Avisos legales</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">REDES SOCIALES</span>
+                <div class="social-container">
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2024 | Todos los derechos de autor reservados.</span>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Link al script -->
+    <script src="../js/app.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

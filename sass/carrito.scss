@@ -1,0 +1,145 @@
+@import './_partials/mixins';
+@import './_partials/functions';
+@import './_partials/variables';
+
+*{
+    box-sizing: border-box;
+}
+
+.shopping-cart {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 45vw;
+    z-index: 1100;
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow-y: scroll;
+    border: black 1px solid;
+    transition: right 0.4s ease;
+
+    h3 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .cerrar-carrito{
+        margin-top: 15px;
+        text-align: right;
+        margin-bottom: 2.7rem;
+
+        > i {
+            cursor: pointer;
+            font-size: 1.8rem;
+            margin: 0px 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, color 0.3s ease;
+        
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+    #lista-carrito {
+        width: 100%;
+        margin-top: -40px;
+
+        thead tr th {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        tbody td {
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    .borrar-producto {
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease, color 0.3s ease;
+        color: black;
+
+        &:hover{
+            color: red;
+        }
+    }
+
+    .principal {
+        padding: 0px 20px;
+
+        .carrito-total {
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    
+        .botones{
+            margin-top: 10px;
+
+            #vaciar-carrito {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+}
+
+.shopping-cart.active {
+    right: 0;
+}
+
+@media screen and (max-width: 980px){
+    .shopping-cart {
+        width: 60vw;
+    }    
+}
+
+@media screen and (max-width: 680px){
+
+    .shopping-cart {
+        width: 60vw;
+        
+        #lista-carrito {
+            width: 100%;
+    
+            thead tr th {
+                font-size: 1em;
+            }
+    
+            tbody td {
+                font-size: 1em;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 680px){
+
+    .shopping-cart {
+        width: 60vw;
+    }
+}
+
+@media (max-width:550px) {
+ 
+    .shopping-cart {
+       width: 100%;
+       border-left: 0;
+    }
+ 
+    .about .box-container {
+       grid-template-columns: 1fr;
+    }
+ 
+    .menu .box-container {
+       grid-template-columns: 1fr;
+    }
+ 
+ }
+ 
