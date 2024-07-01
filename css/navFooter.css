@@ -22,6 +22,7 @@ main {
 }
 
 .menu {
+  z-index: 2;
   color: #ffffff;
 }
 .menu__container {
@@ -141,10 +142,12 @@ main {
   display: block;
   width: 36px;
 }
-.menu .modalBox.active {
+
+.modalBox.active {
   visibility: hidden;
 }
-.menu .modalBox {
+
+.modalBox {
   z-index: 999;
   position: fixed;
   top: 0;
@@ -154,7 +157,7 @@ main {
   background-color: rgba(17, 17, 17, 0.7411764706);
   display: flex;
 }
-.menu .modalBox__container {
+.modalBox__container {
   margin: auto;
   width: 80%;
   max-width: 600px;
@@ -163,11 +166,11 @@ main {
   border-radius: 6px;
   padding: 2em 4em 3em 4em;
 }
-.menu .modalBox__container .formu {
+.modalBox__container .formu {
   display: flex;
   flex-direction: column;
 }
-.menu .modalBox__container .formu__close {
+.modalBox__container .formu__close {
   align-self: flex-end;
   text-decoration: none;
   font-weight: bold;
@@ -175,30 +178,30 @@ main {
   align-items: end;
   color: rgb(26, 24, 24);
 }
-.menu .modalBox__container .formu__close:hover {
+.modalBox__container .formu__close:hover {
   color: rgb(49, 166, 141);
 }
-.menu .modalBox__container .formu__title {
+.modalBox__container .formu__title {
   text-align: center;
   font-size: 30px;
   color: rgb(49, 166, 141);
   margin-bottom: 5px;
   font-weight: bold;
 }
-.menu .modalBox__container .formu__registrate {
+.modalBox__container .formu__registrate {
   color: black;
   text-align: center;
   font-size: 17px;
   margin-bottom: 30px;
 }
-.menu .modalBox__container .formu__registrate > a {
+.modalBox__container .formu__registrate > a {
   color: rgb(49, 166, 141);
 }
-.menu .modalBox__container .formu__label {
+.modalBox__container .formu__label {
   color: black;
   font-size: 1em;
 }
-.menu .modalBox__container .formu__input {
+.modalBox__container .formu__input {
   width: 100%;
   padding-left: 10px;
   font-family: "Poppins", sans-serif;
@@ -206,17 +209,17 @@ main {
   border-radius: 0px;
   margin: 10px 0px;
 }
-.menu .modalBox__container .formu .form__recover {
+.modalBox__container .formu .form__recover {
   font-size: 14px;
   color: rgb(49, 166, 141);
   text-decoration: underline;
   cursor: pointer;
 }
-.menu .modalBox__container .formu .buttons {
+.modalBox__container .formu .buttons {
   text-align: center;
   margin-top: 30px;
 }
-.menu .modalBox__container .formu .buttons > button {
+.modalBox__container .formu .buttons > button {
   cursor: pointer;
   padding: 10px;
   background-color: rgb(49, 166, 141);
@@ -226,7 +229,7 @@ main {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
-.menu .modalBox__container .formu .buttons > button:hover {
+.modalBox__container .formu .buttons > button:hover {
   background-color: rgb(50, 142, 113);
 }
 
@@ -241,8 +244,7 @@ main {
     z-index: 1;
   }
   .menu__hamburguer .menu__img {
-    margin-top: 3px;
-    width: 31px;
+    width: 32px;
     padding: 0;
   }
   .menu .icons i {

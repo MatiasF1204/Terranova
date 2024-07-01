@@ -296,6 +296,9 @@ header {
 }
 
 @media (max-width: 900px) {
+  .content {
+    margin-top: -20px;
+  }
   .menu__container h1 {
     font-size: 27px;
     letter-spacing: 2px;
@@ -306,8 +309,7 @@ header {
     z-index: 1;
   }
   .menu__hamburguer .menu__img {
-    margin-top: 3px;
-    width: 31px;
+    width: 32px;
     padding: 0;
   }
   .menu .icons i {
@@ -318,10 +320,11 @@ header {
     overflow: hidden;
   }
   .menu__links {
+    padding-top: 65px;
     position: fixed;
     max-width: 1000px;
     width: 100%;
-    top: 75px;
+    top: 0;
     bottom: 0;
     right: 0;
     background-color: #222222;

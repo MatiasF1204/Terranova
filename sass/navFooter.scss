@@ -28,6 +28,8 @@ main {
 }
 
 .menu {
+    z-index: 2;
+
     color: $secondary-color;
 
     &__container {
@@ -123,15 +125,14 @@ main {
             border: none;
             cursor: pointer;
 
-            > span {
+            >span {
                 font-size: 0.9em;
                 font-family: $font-primary;
             }
         }
 
-        .user-icon{
+        .user-icon {
             margin-top: -1.5px;
-
             background: none;
             border: none;
             cursor: pointer;
@@ -159,108 +160,108 @@ main {
             width: 36px;
         }
     }
+}
 
-    .modalBox.active{
-        visibility: hidden;
-    }
-    
-    .modalBox{
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #111111bd;
-        display: flex;
-    
-        &__container{
-            margin: auto;
-            width: 80%;
-            max-width: 600px;
-            max-height: 95%;
-            background-color: rgb(244, 239, 239);
-            border-radius: 6px;
-            padding: 2em 4em 3em 4em;
-    
-            .formu{
-                display: flex;
-                flex-direction: column;
-    
-                &__close{
-                    align-self: flex-end;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 20px;
-                    align-items: end;
-                    color: rgb(26, 24, 24);
-    
-                    &:hover{
-                        color: $tertiary-color;
-                    }
-                }
-    
-                &__title{
-                    text-align: center;
-                    font-size: 30px;
+.modalBox.active {
+    visibility: hidden;
+}
+
+.modalBox {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+
+    &__container {
+        margin: auto;
+        width: 80%;
+        max-width: 600px;
+        max-height: 95%;
+        background-color: rgb(244, 239, 239);
+        border-radius: 6px;
+        padding: 2em 4em 3em 4em;
+
+        .formu {
+            display: flex;
+            flex-direction: column;
+
+            &__close {
+                align-self: flex-end;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+                align-items: end;
+                color: rgb(26, 24, 24);
+
+                &:hover {
                     color: $tertiary-color;
-                    margin-bottom: 5px;
-                    font-weight: bold;
-                }
-    
-                &__registrate {
-                    color: black;
-                    text-align: center;
-                    font-size: 17px;
-                    margin-bottom: 30px;
-
-                    > a{
-                        color: $tertiary-color;
-                    }
-                }
-
-                &__label{
-                    color: black;
-                    font-size: 1em;
-                }
-    
-                &__input{
-                    width: 100%;
-                    padding-left: 10px;
-                    font-family: $font-primary;
-                    border: 1px solid black;
-                    border-radius: 0px;
-                    margin: 10px 0px;
-                }
-    
-                .form__recover{
-                    font-size: 14px;
-                    color: $tertiary-color;
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-    
-                .buttons{
-                    text-align: center;
-                    margin-top: 30px;
-
-                    > button {
-                        cursor: pointer;
-                        padding: 10px;
-                        background-color: $tertiary-color;
-                        border-radius: 6px;
-                        border: none;
-                        color: rgba($secondary-color, 1);
-                        font-size:15px;
-                        font-family: $font-primary;
-
-                        &:hover{
-                            background-color: rgb(50, 142, 113);
-                        }
-                    }    
                 }
             }
-        }   
+
+            &__title {
+                text-align: center;
+                font-size: 30px;
+                color: $tertiary-color;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            &__registrate {
+                color: black;
+                text-align: center;
+                font-size: 17px;
+                margin-bottom: 30px;
+
+                >a {
+                    color: $tertiary-color;
+                }
+            }
+
+            &__label {
+                color: black;
+                font-size: 1em;
+            }
+
+            &__input {
+                width: 100%;
+                padding-left: 10px;
+                font-family: $font-primary;
+                border: 1px solid black;
+                border-radius: 0px;
+                margin: 10px 0px;
+            }
+
+            .form__recover {
+                font-size: 14px;
+                color: $tertiary-color;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .buttons {
+                text-align: center;
+                margin-top: 30px;
+
+                >button {
+                    cursor: pointer;
+                    padding: 10px;
+                    background-color: $tertiary-color;
+                    border-radius: 6px;
+                    border: none;
+                    color: rgba($secondary-color, 1);
+                    font-size: 15px;
+                    font-family: $font-primary;
+
+                    &:hover {
+                        background-color: rgb(50, 142, 113);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -278,8 +279,7 @@ main {
             z-index: 1;
 
             .menu__img {
-                margin-top: 3px;
-                width: 31px;
+                width: 32px;
                 padding: 0;
             }
         }
@@ -348,8 +348,9 @@ main {
     .menu__container {
         padding: 0px 15px;
     }
+
     .menu .modalBox {
-        &__container{
+        &__container {
             width: 90%;
             max-height: 90%;
             padding: 1.5em;
